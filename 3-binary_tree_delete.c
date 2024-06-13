@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-/*
+/**
  * binary_tree_delete - Deletes entire binary tree.
  *
  * @tree: Pointer to root node.
