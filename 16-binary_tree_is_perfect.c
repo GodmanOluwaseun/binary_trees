@@ -53,14 +53,15 @@ int no_of_node(const binary_tree_t *tree)
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int height, nodes, compare;
+	int height, nodes;
+	double compare;
 
 	if (tree == NULL)
 		return (0);
 
 	height = tree_height(tree);
 	nodes = no_of_node(tree);
-	double(compare) = pow(double(2), double(height + 1)) - 1;
+	compare = pow(double(2), double(height + 1)) - 1;
 
 	if (nodes == int(compare))
 		return (1);
